@@ -37,6 +37,22 @@
     <div id="container">
         <h2>HOME PAGE</h2>
         <p>Hi <?php echo $_SESSION["name"] ;?> Welcome To My Recruitment Website</p>
+        <h2>Available jobs:</h2>
+        <h3>Front End Developer</h3>
+        <div class="front">
+            <dl>
+                <li>Client side development</li>
+                <li></li>
+                <li></li>
+                <li></li>
+
+            </dl>
+        </div>
+        <div class="front"></div>
+        <div class="front"></div>
+        <div class="front"></div>
+        
+
         <a href="job_registration.php">register your job</a>
     </div>
     <div id="footer">

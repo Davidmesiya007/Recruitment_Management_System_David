@@ -8,172 +8,87 @@
     --secondary:#00203f;
    
 }
-html {
-    background: black;
-}
-body {
-    background: aquamarine;
-    height: 1000px;
-    width: 1000px;
-    margin: 10px auto;
-}
-#header {
-    height: 100px;
+
+
+.front{
+    display: flex;
     width: 100%;
-    background-color: var(--primary);
+    margin: 5px;
+    padding: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+
 }
-.shadow{
+.col{
+    margin: 20px ;
+    width: 45%;
+    padding: 10px ;
+    background-color: whitesmoke;
+    border-radius: 5px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.25);
 }
-#logo{
-    float: left;
-    height: 100%;
-    width: 100px;
+.col ul{
+    padding: 10px;
 }
-#logoHeading {
-    float: right;
-    height: 100px;
-    width: 880px;
+.container{
+    margin: 10px;
     background-color: var(--primary);
-    line-height: 100px;
-
 }
-
-
-#nav {
-    height: 40px;
-    width: 100%;
+h2{
+    padding: 5px;
+    margin-top: 10px;
+    width: 60%;
     background-color: var(--secondary);
-}
-#container {
-    height: 820px;
-    width: 100%;
-    background-color: white;
-}
-#footer {
-    height: 40px;
-    width: 100%;
-    background: var(--secondary);
-    color: var(--primary);
-    line-height: 40px;
-}
-#navMenu li{
-    list-style-type: none;
-    display: inline;
-    padding-left: 40px;
-    padding-right: 40px;
-    line-height: 40px;
-}
-#navMenu li a {
-        text-decoration: none;
-        
-        color: white;
-}
-#navMenu li a:hover{
-    color: var(--primary);
-}
-#container h2 {
-    padding-top: 50px;
-    color: black;
-    text-align: center;
-}
-#user-login {
-    min-height: 350px;
-    width: 500px;
-    margin: 20px auto;
+    color: white;
     border-radius: 5px;
-    background-color: white;
+    
+}
+.register{
+    align-items: center;
+    margin: 20px;
+    width: 150px;
+    height: 30px;
 
 }
-#user-login legend {
-    margin-left: 20px;
-    color: black;
-}
-#user-table {
-    margin: 50px;
-    font-weight: bolder;
-}
-#user-table tr td{
-    padding: 10px 20px 10px 20px;
-
-}
-#user-table a{
-    color: green;
+.register a{
     text-decoration: none;
 }
-#user-table a:hover {
-    color: black;
-    text-decoration: underline;
-}
-#user-table input[type="text"],input[type="password"],input[type="email"],select{
+.button {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
     width: 200px;
-    height: 30px;
-    border: 1px solid var(--secondary) ;
-    padding-left: 20px;
-    color: var(--secondary);
-}
-#user-table input[type="submit"], input[type="reset"] {
-    height: 30px;
-    width: 100px;
-    background-color: var(--secondary);
-    color: var(--primary);
-    border-radius: 5px;
-}
-.cord {
-    
-    min-height: 300px;
-    width: 800px;
-    margin: 30px auto;
-}
-.col {
-    display: flex;
-
-}
-.col1,.col2 {
-    width: 50%;
-    float: left;
-    padding-left: 20px;
-
-}
-.register_form input[type="text"],input[type="password"],input[type="email"],select{
-    width: 200px;
-    height: 30px;
-    border: 1px solid var(--secondary) ;
-    padding-left: 20px;
-
-}
-p{
-    margin: 10px;
-}
-.error{
-    color: red;
-
-}
-.correct{
-    color: lime;
-}
-#user_table, #applicant_table {
-    font-family: Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    margin-bottom: 20px;
   }
   
-  #user_table td,#applicant_table td,#applicant_table td,#user_table th {
-    border: 1px solid #ddd;
-    padding: 8px;
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
   }
   
-  #user_table tr:nth-child(even),#applicant_table tr:nth-child(even){background-color: #f2f2f2;}
-  
-  #user_table tr:hover,#applicant_table tr:hover {background-color: #ddd;}
-  
-  #user_table th ,#applicant_table th{
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #04AA6D;
-    color: white;
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
   }
- 
   
- 
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
