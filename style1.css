@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root{
+    --primary:#adf0d1;
+    --secondary:#00203f;
+   
+}
+  
+  body {
+    background-color: white;
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .apply_box {
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1);
+    border-radius: 10px;
+  }
+  
+  .title_small {
+    font-size: 20px;
+  }
+  
+  .form_container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  .form_control {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  select,
+  textarea {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+  }
+  
+  input:focus {
+    outline-color: var(--secondary);
+  }
+  
+  .button_container {
+    display: flex;
+  
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  button {
+    background-color: var(--secondary);
+    border: transparent solid 2px;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 8px;
+    transition: 0.3s ease-in;
+  }
+  button:hover {
+    background-color: #ccc;
+    border: 2px solid var(--secondary);
+    color: black;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+  }
+  .textarea_control {
+    grid-column: 1 / span 2;
+  }
+  .textarea_control textarea {
+    width: 100%;
+  }
+  
+  @media (max-width: 460px) {
+    .textarea_control {
+      grid-column: 1 / span 1;
+    }
+  } ;
+  #user_table, #applicant_table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    
+  }
+  
+  #user_table td,#applicant_table td,#applicant_table td,#user_table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #user_table tr:nth-child(even),#applicant_table tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #user_table tr:hover,#applicant_table tr:hover {background-color: var(--primary);}
+  
+  #user_table th ,#applicant_table th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: var(--secondary);
+    color: white;
+  }
+  .admin_head{
+    background-color: var(--secondary);
+    color: white;
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px;
+
+  }
+ h2{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: var(--primary);
+    color: black;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+ }

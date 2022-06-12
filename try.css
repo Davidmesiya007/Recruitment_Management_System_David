@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primary:#adf0d1;
+    --secondary:#00203f;
+   
+}
+html {
+    background: black;
+}
+body {
+    background: aquamarine;
+    height: 1000px;
+    width: 1000px;
+    margin: 10px auto;
+}
+#header {
+    height: 100px;
+    width: 100%;
+    background-color: var(--primary);
+}
+.shadow{
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+#logo{
+    float: left;
+    height: 100%;
+    width: 100px;
+}
+#logoHeading {
+    float: right;
+    height: 100px;
+    width: 880px;
+    background-color: var(--primary);
+    line-height: 100px;
+
+}
+
+
+#nav {
+    height: 40px;
+    width: 100%;
+    background-color: var(--secondary);
+}
+#container {
+    height: 820px;
+    width: 100%;
+    background-color: white;
+}
+#footer {
+    height: 40px;
+    width: 100%;
+    background: var(--secondary);
+    color: var(--primary);
+    line-height: 40px;
+}
+#navMenu li{
+    list-style-type: none;
+    display: inline;
+    padding-left: 40px;
+    padding-right: 40px;
+    line-height: 40px;
+}
+#navMenu li a {
+        text-decoration: none;
+        
+        color: white;
+}
+#navMenu li a:hover{
+    color: var(--primary);
+}
+#container h2 {
+    padding-top: 50px;
+    color: black;
+    text-align: center;
+}
+#user-login {
+    min-height: 350px;
+    width: 500px;
+    margin: 20px auto;
+    border-radius: 5px;
+    background-color: white;
+
+}
+#user-login legend {
+    margin-left: 20px;
+    color: black;
+}
+#user-table {
+    margin: 50px;
+    font-weight: bolder;
+}
+#user-table tr td{
+    padding: 10px 20px 10px 20px;
+
+}
+#user-table a{
+    color: green;
+    text-decoration: none;
+}
+#user-table a:hover {
+    color: black;
+    text-decoration: underline;
+}
+#user-table input[type="text"],input[type="password"],input[type="email"],select{
+    width: 200px;
+    height: 30px;
+    border: 1px solid var(--secondary) ;
+    padding-left: 20px;
+    color: var(--secondary);
+}
+#user-table input[type="submit"], input[type="reset"] {
+    height: 30px;
+    width: 100px;
+    background-color: var(--secondary);
+    color: var(--primary);
+    border-radius: 5px;
+}
+.cord {
+    
+    min-height: 300px;
+    width: 800px;
+    margin: 30px auto;
+}
+.col {
+    display: flex;
+
+}
+.col1,.col2 {
+    width: 50%;
+    float: left;
+    padding-left: 20px;
+
+}
+.register_form input[type="text"],input[type="password"],input[type="email"],select{
+    width: 200px;
+    height: 30px;
+    border: 1px solid var(--secondary) ;
+    padding-left: 20px;
+
+}
+p{
+    margin: 10px;
+}
+.error{
+    color: red;
+
+}
+.correct{
+    color: lime;
+}
+#user_table, #applicant_table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #user_table td,#applicant_table td,#applicant_table td,#user_table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #user_table tr:nth-child(even),#applicant_table tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #user_table tr:hover,#applicant_table tr:hover {background-color: #ddd;}
+  
+  #user_table th ,#applicant_table th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+ 
+  
+ 
